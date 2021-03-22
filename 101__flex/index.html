@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/f7e687ce66.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1100px)"
+      href="css/widescreen.css"
+    />
+    <title>Zen Finance | Banking Solutions & Consulting</title>
+  </head>
+
+  <body id="home">
+    <nav id="navbar">
+      <h1 class="logo"><span class="text-primary">Zen</span>Finance</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- header -->
+    <header id="showcase">
+      <div class="showcase-content">
+        <h1 class="l-heading">
+          Your business. Our work.
+        </h1>
+        <p class="lead">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente
+          cupiditate facere consequatur dolorum magni, laborum dolores
+          blanditiis. Illum, eum inventore!
+        </p>
+        <a href="#solutions" class="btn">Read more</a>
+      </div>
+    </header>
+
+    <!-- solutions -->
+    <section id="solutions" class="bg-light py-1">
+      <div class="container">
+        <h2 class="m-heading text-center">
+          <span class="text-primary">Zen</span>
+          Solutions
+        </h2>
+        <div class="items">
+          <div class="item">
+            <i class="fas fa-university fa-2x"></i>
+            <div>
+              <h3>Banking</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat, quisquam.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-edit fa-2x"></i>
+            <div>
+              <h3>Consulting</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Distinctio, iusto.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <i class="fas fa-shield-alt fa-2x"></i>
+            <div>
+              <h3>Security</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestias consequatur dolore officia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about-img"></div>
+      <div class="about-text bg-dark p-2">
+        <h2 class="m-heading">About <span class="text-primary">Zen</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          qui omnis fugiat sit amet quia inventore ipsam reprehenderit, quidem
+          doloremque aut quaerat aspernatur ratione quos explicabo dolorem, vero
+          nihil hic similique ipsum itaque reiciendis delectus tenetur. Dolorum
+          tenetur quo sapiente.
+        </p>
+        <h3>Our Team</h3>
+        <ul class="list">
+          <li>John Doe: CEO</li>
+          <li>Max Firaxis: CFO</li>
+          <li>Jane Potter: CTO</li>
+          <li>Chris Mistré: CIO</li>
+          <li>Ernest Mickelsen: CMO</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="clients" class="py-1">
+      <div class="container">
+        <h2 class="m-heading text-center">
+          <span class="text-primary">Zen</span>
+          Clients
+        </h2>
+        <div class="items py-1">
+          <div><img src="./img/logos/logo1.png" alt="Client" /></div>
+          <div><img src="./img/logos/logo2.png" alt="Client" /></div>
+          <div><img src="./img/logos/logo3.png" alt="Client" /></div>
+          <div><img src="./img/logos/logo4.png" alt="Client" /></div>
+          <div><img src="./img/logos/logo5.png" alt="Client" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Contact Us</h2>
+        <p>Use the form below</p>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="name"
+              name="name"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+              type="phone"
+              name="phone"
+              id="phone"
+              placeholder="Enter your phone number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              type="message"
+              name="message"
+              id="message"
+              placeholder="Your message here"
+            ></textarea>
+          </div>
+          <input type="submit" value="Send" class="btn btn-dark" />
+        </form>
+      </div>
+
+      <div id="map"></div>
+    </section>
+
+    <footer id="main-footer" class="bg-dark text-center py-1">
+      <div class="container">
+        <p>Copyright &copy; 2019</p>
+        <p>
+          <span class="text-primary">Zen</span> Finance. Banking Solutions &
+          Consulting
+        </p>
+      </div>
+    </footer>
+
+    <!-- JQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Local JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

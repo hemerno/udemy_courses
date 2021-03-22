@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Presentation</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+
+      box-sizing: border-box;
+      list-style: none;
+      text-decoration: none;
+      text-rendering: optimizeLegibility;
+    }
+
+    :root {
+      --fg: #ffffff;
+      --page-1-bg: #e98323;
+      --page-2-bg: #39b828;
+      --page-3-bg: #1bbcd8;
+      --page-4-bg: #d32929;
+    }
+
+    body {
+      font-family: monospace;
+      line-height: 1.2;
+      overflow: hidden;
+      color: var(--fg);
+    }
+
+    a {
+      color: var(--fg);
+    }
+
+    /* Page bg colors */
+    #page-1 {
+      background: var(--page-1-bg);
+    }
+
+    #page-2 {
+      background: var(--page-2-bg);
+    }
+
+    #page-3 {
+      background: var(--page-3-bg);
+    }
+
+    #page-4 {
+      background: var(--page-4-bg);
+    }
+
+
+    .slide {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      padding: 0 5rem;
+      background: var(--page-bg);
+    }
+
+    .slide h1 {
+      font-size: 4rem;
+      line-height: 1.5;
+      margin: 1rem;
+    }
+
+    .slide p {
+      font-size: 1.2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      border: 1px solid var(--fg);
+    }
+  </style>
+</head>
+
+<body>
+
+  <section id="page-1" class="slide">
+    <h1>Welcome</h1>
+    <div>
+      <a href="#page-2" class="btn">Next</a>
+    </div>
+  </section>
+
+  <section id="page-2" class="slide">
+    <h1>Page 2</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veniam facere rerum! Suscipit, modi ut? Nostrum quo
+      natus animi id quod dolores ab ex dignissimos.</p>
+    <div>
+      <a href="#page-3" class="btn">Next</a>
+      <a href="#page-1" class="btn">Previous</a>
+    </div>
+  </section>
+
+  <section id="page-3" class="slide">
+    <h1>Page 3</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veniam facere rerum! Suscipit, modi ut? Nostrum quo
+      natus animi id quod dolores ab ex dignissimos.</p>
+    <div>
+      <a href="#page-4" class="btn">Next</a>
+      <a href="#page-2" class="btn">Previous</a>
+    </div>
+  </section>
+
+  <section id="page-4" class="slide">
+    <h1>Page 4</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero veniam facere rerum! Suscipit, modi ut? Nostrum quo
+      natus animi id quod dolores ab ex dignissimos.</p>
+    <div>
+      <a href="#page-3" class="btn">Previous</a>
+    </div>
+  </section>
+
+</body>
+
+</html>

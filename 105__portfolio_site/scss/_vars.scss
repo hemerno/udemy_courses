@@ -1,0 +1,13 @@
+$bg: #222;
+$fg: #eee;
+$ac: #fb0;
+$font-serif: 100% "Source Sans Pro", sans-serif;
+$bg-image: url(../img/daniel-leone-g30P1zcOzXo-unsplash.jpg);
+
+@function text-color($color) {
+  @if (lightness($color) > 50) {
+    @return $bg;
+  } @else {
+    @return $fg;
+  }
+}

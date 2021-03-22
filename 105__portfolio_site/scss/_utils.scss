@@ -1,0 +1,87 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+%btn-shared {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  transition: all 0.4s;
+  border: none;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.btn {
+  &-light {
+    @extend %btn-shared;
+    color: $bg;
+    background: $fg;
+  }
+  &-dark {
+    @extend %btn-shared;
+    color: $fg;
+    background: $bg;
+  }
+}
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover,
+input[class^="btn-"]:hover {
+  background: $ac;
+}
+
+.lead {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.bottom-line {
+  display: block;
+  height: 2px;
+  width: 4rem;
+  background: $ac;
+  margin: 0 auto 2rem auto;
+}
