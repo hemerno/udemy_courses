@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+      integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg="
+      crossorigin="anonymous"
+    />
+    <style>
+      .success,
+      .error {
+        color: white;
+        margin: 0.5rem 0 1rem;
+        padding: 1rem;
+      }
+      .success {
+        background: darkgreen;
+        color: white;
+      }
+      .error {
+        background: tomato;
+      }
+      .delete {
+        color: red;
+        text-decoration: none;
+      }
+    </style>
+    <title>/mu/</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Music collection</h1>
+      <form id="album-form">
+        <label for="album">Album</label>
+        <input type="text" id="title" class="u-full-width" />
+        <label for="artist">Artist</label>
+        <input type="text" id="artist" class="u-full-width" />
+        <label for="year">Year</label>
+        <input type="text" id="year" class="u-full-width" />
+        <input type="submit" value="Submit" class="u-full-width" />
+      </form>
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th>Album</th>
+            <th>Artist</th>
+            <th>Year</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="album-list"></tbody>
+      </table>
+    </div>
+  </body>
+  <script src="appes6.js"></script>
+</html>

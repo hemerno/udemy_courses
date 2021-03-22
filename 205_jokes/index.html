@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <title>YEEZUS QUOTES</title>
+    <style>
+      * {
+        list-style: none;
+      }
+
+      li {
+        margin-bottom: 4rem;
+      }
+
+      .quotes {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Kanye quote generator</h1>
+      <form>
+        <div>
+          <button class="get-quotes">GET</button>
+        </div>
+      </form>
+      <ul class="quotes"></ul>
+    </div>
+    <script>
+      document
+        .querySelector(".get-quotes")
+        .addEventListener("click", getQuotes);
+
+      function getQuotes(event) {
+        const xhr = new XMLHttpRequest();
+
+        xhr.open("GET", "https://api.kanye.rest", true);
+
+        xhr.onload = () => {
+          const response = JSON.parse(xhr.responseText);
+
+          let output = "";
+
+          if (xhr.statusText === "OK") {
+            output += `<li>${response.quote}</li>`;
+          } else {
+            output += "<li>ERROR</li>";
+          }
+
+          document.querySelector(".quotes").innerHTML += output;
+        };
+
+        xhr.send();
+
+        event.preventDefault();
+      }
+    </script>
+  </body>
+</html>
